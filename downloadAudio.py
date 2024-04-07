@@ -23,7 +23,7 @@ def download_and_convert_audio(youtube_urls, output_folder):
         os.remove(mp4_file)
 
         # Print result of success
-        print(f"Audio - {yt.title} has been successfully downloaded and saved as MP3 in {output_folder}")
+        print(f"\n Audio - {yt.title} has been successfully downloaded and saved as MP3 in {output_folder}")
 
 
 # # List of YouTube URLs
