@@ -1,0 +1,12 @@
+This is the sample of "temp_description.txt". The "extractUrls.py" will extract every URL in '- Watch: ' text.
+For example: 
+- iamalex x Felty - Treelight
+- Watch: https://www.youtube.com/watch?v=0kY-q8_-SXk&t=0s
+
+- iamalex x Felty - Myth
+- Watch: https://www.youtube.com/watch?v=14ZqzlKKu7E&t=0s
+
+- iamalex x Felty - Arrow
+- Watch: https://www.youtube.com/watch?v=JubUjquBMHw&t=0s
+
+...

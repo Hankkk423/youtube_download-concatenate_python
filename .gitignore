@@ -1,6 +1,7 @@
 downloaded_audio/
 combined_audio/
 youtube_urls.txt
+temp_description.txt
 constants.py
 
 # Byte-compiled / optimized / DLL files
