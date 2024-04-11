@@ -1,5 +1,5 @@
 # Open the temp.txt file for reading
-with open("temp_Description.txt", "r") as temp_file:
+with open("temp_description.txt", "r", encoding="utf-8") as temp_file:
     lines = temp_file.readlines()
 
 # Open the youtube_urls.txt file for writing
