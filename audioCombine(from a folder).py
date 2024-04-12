@@ -1,6 +1,8 @@
 from pydub import AudioSegment
 from tqdm import tqdm
 import os
+import shutil
+
 
 def concatenate_audio_pydub(audio_clip_paths, output_path, verbose=1):
     """
@@ -44,13 +46,18 @@ def main():
 
     print("mp3_files", len(mp3_files))
 
-
     # Specify the output path for the combined audio file
     output_path = "combined_audio/combined_audio.mp3"
 
-    # Create the output folder if it doesn't exist
-    if not os.path.exists("combined_audio"):
-        os.makedirs("combined_audio")
+    # Folder to save combined audio file
+    output_folder = "combined_audio"
+
+    # Check if the output folder exists
+    if os.path.exists(output_folder):
+        # If it exists, delete it and recreate it
+        shutil.rmtree(output_folder)
+    # Create the output folder
+    os.makedirs(output_folder)
 
     # Combine the audio files
     concatenate_audio_pydub(mp3_files, output_path, verbose=1)

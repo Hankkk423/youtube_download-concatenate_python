@@ -43,18 +43,12 @@ youtube_urls = [url.strip() for url in youtube_urls if url.strip()]  # Remove em
 # Folder to save downloaded audio files
 output_folder = "downloaded_audio"
 
-# Create the output folder if it doesn't exist
-if not os.path.exists(output_folder):
-    os.makedirs(output_folder)
-
-
-# # Check if the output folder exists
-# if os.path.exists(output_folder):
-#     # If it exists, delete it and recreate it
-#     shutil.rmtree(output_folder)
-# # Create the output folder
-# os.makedirs(output_folder)
-
+# Check if the output folder exists
+if os.path.exists(output_folder):
+    # If it exists, delete it and recreate it
+    shutil.rmtree(output_folder)
+# Create the output folder
+os.makedirs(output_folder)
 
 # Download and convert audio files
 download_and_convert_audio(youtube_urls, output_folder)
